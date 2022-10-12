@@ -1,28 +1,16 @@
-//window.onload = function() {
-//	var images = document.querySelectorAll('.minP'), index, image;
-//	for (index = 0; index < images.length; index++) {
-//		image = images[index];
-//		image.addEventListener('mouseover', function() {
-//			document.getElementById('shownImage').src = "../pictures/big/" + this.id + ".png";
-//		});
-//		image.addEventListener('mouseout', function() {
-//			document.getElementById('shownImage').src = "../pictures/big/1.png";
-//		});
-//	}
-//}
-
 //Block 1
 window.onload = function() {
-	var images = document.querySelectorAll('.minP'), index, image;
+	let images = document.querySelectorAll('.divMinP'), index, image;
 	for (let image of images) {
 		image.addEventListener('mouseover', function() {
-			document.getElementById('shownImage').src = "../pictures/big/" + this.id + ".png";
+			document.getElementById('shownImage').src = "../pictures/" + this.getAttribute('data') + ".png";
+			//document.getElementById('shownImage').src = "../pictures/big/" + this.id + ".png";
 		});
 		image.addEventListener('mouseout', function() {
 			document.getElementById('shownImage').src = "../pictures/big/1.png";
 		});
 	}
-	//Block 2
+//Block 2
 	document.querySelectorAll('input[type=button]')[1].onclick = function() {
 		if(document.querySelectorAll('input[type=text]')[0].value < 1) {
 			
@@ -36,10 +24,9 @@ window.onload = function() {
 	};
 
 	document.getElementById('firstB').onclick = function() {
-		//alert("Hello");
-		var X = document.querySelectorAll('input[type=text]')[0].value;
-		var text;
-		var title;
+		let X = document.querySelectorAll('input[type=text]')[0].value;
+		let text;
+		let title;
 		if(X > 0) {
 			title = "Покупка"
 			text = "В корзину добавлено " + X;

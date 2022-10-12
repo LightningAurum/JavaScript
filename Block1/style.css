@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "Circe Regular";
+    src: url(../fonts/CirceRegular.ttf) format("truetype");
+}
+
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: "Circe Regular";
 }
 
 h1 {
@@ -28,7 +33,9 @@ h1 {
 }
 
 .minP {
-	padding: 20px;
+	padding: 15px;
+	width: 100px;
+	height: auto;
 }
 
 .shops {
@@ -106,17 +113,7 @@ a {
 }
 
 .link {
-	display: inline-block;
-	border-radius: 20px;
-	border-color: rgb(238, 238, 238);
-	background: rgb(255, 255, 255);
-	border-style: solid;
-	width: 30px;
-	height: 30px;
-	color: rgba(0, 0, 0, 0.7);
-	vertical-align: middle;
-	text-align: center;
-	line-height: 30px;
+	cursor: pointer;
 }
 
 .list li {
@@ -168,8 +165,11 @@ p {
 }
 
 .social-icons {
-	vertical-align: middle;
+	display: flex;
+	justify-content: space-between;
+	width: 400px;
 	margin-top: 40px;
+	align-items: center;
 }
 
 .details {

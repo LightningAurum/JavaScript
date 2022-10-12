@@ -8,13 +8,13 @@
 	<body>
 		<div class="box">
 			<div class="slider">
-				<div class="minP" id="1" name="image" value="1"><image src="../pictures/small/1.png"></div>
-				<div class="minP" id="2" name="image" value="2"><image src="../pictures/small/2.png"></div>
-				<div class="minP" id="3" name="image" value="3"><image src="../pictures/small/3.png"></div>
+				<div data="1" class="divMinP" name="image" value="1"><image class="minP" src="../pictures/1.png"></div>
+				<div data="2" class="divMinP" name="image" value="2"><image class="minP" src="../pictures/2.png"></div>
+				<div data="3" class="divMinP" name="image" value="3"><image class="minP" src="../pictures/3.png"></div>
 				<input id="slide" type="button" value="&#709;">
 			</div>
 			<div>
-				<image id="shownImage" src="../pictures/big/1.png">
+				<img id="shownImage" src="../pictures/1.png">
 			</div>
 			<div class="info">
 				<h1>Рубашка Medicine</h1>
@@ -32,8 +32,8 @@
 					<p class="price" id="promo">- с промокодом</p>
 				</div>
 				<div class="shops">
-					<p><image src="../pictures/gg.png"> В наличии в магазине <a class="shopL">Lamoda</a></p>
-					<p><image src="../pictures/ggg.png"> Бесплатная доставка</p>
+					<p><img src="../pictures/gg.png"> В наличии в магазине <a class="shopL">Lamoda</a></p>
+					<p><img src="../pictures/ggg.png"> Бесплатная доставка</p>
 				</div>
 				<div class="eding">
 					<input type="button" value="-"><input type="text" value="0" disabled><input type="button" value="+">
@@ -46,13 +46,11 @@
 					<p>Рубашка Medicine выполнена из вискозной ткани с клетчатым узором.<br>Детали: прямой крой; отложной воротник; планка и манжеты на пуговицах; карман на груди.</p>
 				</div>
 				<div class="social-icons">
-					<p id="oneLine">ПОДЕЛИТЬСЯ:
-					<ul class="list">
-						<li><a class="link">B</a></li>
-						<li><a class="link">g+</a></li>
-						<li><a class="link">f</a></li>
-						<li><a class="link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a></li>
-					</ul>
+					<div>ПОДЕЛИТЬСЯ:</div>
+					<div><a class="link"><img src="../pictures/vk.png"></a></div>
+					<div><a class="link"><img src="../pictures/gm.png"></a></div>
+					<div><a class="link"><img src="../pictures/f.png"></a></div>
+					<div><a class="link"><img src="../pictures/twi.png"></a></div>
 					<div id="count">123</div>
 				</div>
 			</div>
