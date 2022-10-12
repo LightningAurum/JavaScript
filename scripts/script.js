@@ -4,10 +4,9 @@ window.onload = function() {
 	for (let image of images) {
 		image.addEventListener('mouseover', function() {
 			document.getElementById('shownImage').src = "../pictures/" + this.getAttribute('data') + ".png";
-			//document.getElementById('shownImage').src = "../pictures/big/" + this.id + ".png";
 		});
 		image.addEventListener('mouseout', function() {
-			document.getElementById('shownImage').src = "../pictures/big/1.png";
+			document.getElementById('shownImage').src = "../pictures/1.png";
 		});
 	}
 //Block 2
